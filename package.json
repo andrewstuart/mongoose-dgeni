@@ -1,0 +1,30 @@
+{
+  "name": "mongoose-dgeni",
+  "version": "0.1.0",
+  "description": "A dgeni processor to insert documentation into a mongodb database via mongoose.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/andrewstuart/mongoose-dgeni"
+  },
+  "keywords": [
+    "dgeni",
+    "mongoose",
+    "mongodb",
+    "processor"
+  ],
+  "author": "Andrew Stuart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewstuart/mongoose-dgeni/issues"
+  },
+  "homepage": "https://github.com/andrewstuart/mongoose-dgeni",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "mongoose": "^3.8.17",
+    "q": "^1.0.1"
+  }
+}
