@@ -1,6 +1,6 @@
 var q = require('q')
  ,  _ = require('lodash')
- ,  mds = require('mongoose-dgeni-schemas')
+ ,  mds = require('mongoose-dgeni-ngdoc')
  ,  mongoose = require('mongoose')
  ,  Schema = mongoose.Schema
  ,  Doc = mds.Doc;
