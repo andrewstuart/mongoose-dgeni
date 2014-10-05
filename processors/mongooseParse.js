@@ -13,10 +13,9 @@ module.exports = function mongooseParse() {
       var docObjects = _.map(docs, mds.getDocs);
 
       Doc.remove({}, function(err) {
-        console.log('cleared');
 
         Doc.create(docObjects, function(err) {
-          console.log('created');
+
           if(err) { return deferred.reject(err); }
           else { return deferred.resolve(docs); }
         });
