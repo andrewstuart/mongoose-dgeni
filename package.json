@@ -1,6 +1,6 @@
 {
   "name": "mongoose-dgeni",
-  "version": "0.2.1",
+  "version": "0.1.0",
   "description": "A dgeni processor to insert documentation into a mongodb database via mongoose.",
   "main": "index.js",
   "scripts": {
@@ -23,11 +23,9 @@
   },
   "homepage": "https://github.com/andrewstuart/mongoose-dgeni",
   "dependencies": {
-    "dgeni": "^0.4.1",
-    "dgeni-packages": "^0.10.0",
     "lodash": "^2.4.1",
     "mongoose": "^3.8.17",
-    "mongoose-ngdoc-dgeni-schemas": "file:/home/andrew/src/Repos/mongoose-dgeni-schemas",
+    "mongoose-dgeni-ngdoc": "^0.1.1",
     "q": "^1.0.1"
   }
 }
