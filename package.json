@@ -23,8 +23,10 @@
   },
   "homepage": "https://github.com/andrewstuart/mongoose-dgeni",
   "dependencies": {
+    "dgeni": "^0.4.1",
     "lodash": "^2.4.1",
     "mongoose": "^3.8.17",
+    "mongoose-ngdoc-dgeni-schemas": "file:/home/andrew/src/Repos/mongoose-dgeni-schemas",
     "q": "^1.0.1"
   }
 }
