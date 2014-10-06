@@ -1,6 +1,6 @@
 {
   "name": "mongoose-dgeni",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A dgeni processor to insert documentation into a mongodb database via mongoose.",
   "main": "index.js",
   "scripts": {
