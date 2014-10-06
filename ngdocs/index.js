@@ -29,6 +29,10 @@ var tagDef = exports.tagDef = {
 
 var docDef = exports.docDef = {
   file: fileDef,
+  tagDef: tagDef,
+  tagName: String,
+  typeExpression: String,
+  typeList: [String],
   tags: [ tagDef ],
   name: String,
   description: String,
@@ -65,7 +69,21 @@ var getDocs = exports.getDocs = function mongooseDocs(doc) {
   };
 
   //TODO Combine these two iterators and a conditional. Maybe go recursive for coolness factor. I mean efficiency.
-  _.each(['name', 'description', 'area', 'api', 'priority', 'codeName', 'id', 'aliases', 'path'],
+  _.each([
+    'name',
+    'description',
+    'area',
+    'api',
+    'priority',
+    'codeName',
+    'id',
+    'aliases',
+    'path',
+    'tagDef',
+    'tagName',
+    'typeExpression',
+    'typeList'
+  ],
          function(prop) {
            if(doc[prop]) {
              newDoc[prop] = doc[prop];
