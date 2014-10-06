@@ -25,7 +25,6 @@
   "dependencies": {
     "lodash": "^2.4.1",
     "mongoose": "^3.8.17",
-    "mongoose-dgeni-ngdoc": "^0.1.1",
     "q": "^1.0.1"
   }
 }
