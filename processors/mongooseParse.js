@@ -7,8 +7,8 @@ var q = require('q')
 
 module.exports = function mongooseParse() {
   return {
-    continueProcessing: false,
-    $runBefore: ['writing-files'],
+    renderTemplates: false,
+    $runBefore: ['rendering-docs'],
     $process: function(docs) {
       var config = this;
 
@@ -20,9 +20,7 @@ module.exports = function mongooseParse() {
         Doc.create(docObjects, function(err) {
 
           if(err) { return deferred.reject(err); }
-          else {
-            return deferred.resolve(config.continueProcessing ? docs : []);
-          }
+          else { return deferred.resolve(config.renderTemplates ? docs : []); }
         });
 
       });
